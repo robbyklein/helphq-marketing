@@ -1,0 +1,17 @@
+.width {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 90%;
+
+  @media (min-width: $mediumbp) {
+    width: 94%;
+  }
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}

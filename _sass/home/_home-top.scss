@@ -1,0 +1,23 @@
+.home-top-section {
+  background: $primary;
+  height: 660px;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+
+
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    color: $white;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 20px;
+    max-width: 500px;
+    color: rgba(255,255,255,0.7);
+    margin: 20px 0;
+  }
+}

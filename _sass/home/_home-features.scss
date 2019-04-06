@@ -1,0 +1,50 @@
+.background-layer {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.home-features-section {
+  text-align: center;
+  padding: 60px 0;
+  background: $white;
+
+  @media (min-width: $largebp) {
+    padding: 140px 0;
+  }
+}
+
+.home-features {
+  margin-top: 60px;
+
+  @media (min-width: $largebp) {
+    display: flex;
+    margin-top: 80px;
+
+  }
+}
+
+.home-feature {
+  padding: 20px;
+
+  .icon {
+    width: 90px;
+    height: 90px;
+    background: #eee;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-top: 15px;
+  }
+
+}
