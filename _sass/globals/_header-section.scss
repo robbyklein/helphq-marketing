@@ -1,0 +1,40 @@
+.header-section {
+  h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: $primary;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 40px;
+
+    @media (min-width: $largebp) {
+      font-size: 46px;
+    }
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+    max-width: 640px;
+    margin: 20px auto 0;
+
+    @media (min-width: $largebp) {
+      font-size: 20px;
+    }
+  }
+}
+
+.header-section.on-dark {
+  h2 {
+    color: $white;
+    opacity: 0.7;
+  }
+
+  h3 {
+    color: $white;
+  }
+}

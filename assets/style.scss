@@ -1,14 +1,22 @@
 ---
 ---
 
-@import "variables";
-@import "reset-and-defaults";
-@import "helper-classes";
-@import "header";
-@import "buttons";
-@import "header-section";
+@import "globals/variables";
+@import "globals/reset-and-defaults";
+@import "globals/helper-classes";
+@import "globals/header";
+@import "globals/hamburger";
+@import "globals/buttons";
+@import "globals/header-section";
+@import "globals/animations";
+@import "globals/footer";
 
 @import "home/home-top";
 @import "home/home-features";
-@import "home/home-testimonial";
-@import "home/home-trusted";
+@import "home/home-seamless";
+@import "home/home-waiting";
+
+@import "page/page-top";
+@import "page/doc-content";
+@import "page/docs-list";
+

@@ -1,0 +1,17 @@
+.docs-list {
+  text-align: center;
+  font-size: 18px;
+
+  @media (min-width: $largebp) {
+    font-size: 20px;
+  }
+
+  li + li {
+    margin-top: 10px;
+  }
+
+  a {
+    color: $black;
+    font-weight: 600;
+  }
+}

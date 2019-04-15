@@ -1,0 +1,33 @@
+.footer {
+  background: $black;
+  padding: 40px 0;
+  display: none;
+
+  @media (min-width: $smbp) {
+    padding: 25px 0;
+  }
+
+  .width {
+    @media (min-width: $smbp) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  p, a {
+    color: white;
+  }
+
+  ul {
+    @media (min-width: $smbp) {
+      display: inline-flex;
+      margin-left: auto;
+    }
+  }
+
+  li + li {
+    @media (min-width: $smbp) {
+      margin-left: 50px;
+    }
+  }
+}

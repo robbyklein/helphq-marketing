@@ -1,0 +1,36 @@
+.button {
+  display: inline-block;
+  padding: 0 25px;
+  line-height: 46px;
+  font-weight: 600;
+  background-color: $primary;
+  color: $white;
+  border-radius: 4px;
+  transition: 0.2s color, 0.2s background-color;
+
+  &:hover {
+    background-color: #0059ce;
+  }
+
+  &.large {
+    line-height: 54px;
+    padding: 0 30px 0;
+    border-radius: 4px;
+  }
+
+  &.white {
+    background: $white;
+    color: $black;
+
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+  }
+
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 12px 0;
+  }
+}

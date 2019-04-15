@@ -2,20 +2,31 @@
 layout: default
 ---
 
-<div class="home-top-section">
+<div class="home-top-section wave bottom">
   <div class="width">
-    <h1>
-      Answer better<br />
-      Answer Less
-    </h1>
-    <p>A knowledge base built to scale customer support, success, and education teams.</p>
-    <a class="button large white">
-      {% include svg/shopify.html %} Get Started
-    </a>
+    <div class="content">
+      <div class="left">
+        <h1>
+          Answer more<br />
+          Email Less
+        </h1>
+        <p>
+          HelpHQ is a Shopify help center app built to increase customer satisfaction and
+          reduce support email.
+        </p>
+        <a href="https://app.help-hq.com" class="button large white">Get Started</a>
+      </div>
+
+      <div class="right">
+        <div class="video">
+          <iframe width="100%" src="https://www.youtube.com/embed/rm0_kmwrCnM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="home-features-section">
+<div class="home-features-section wave bottom">
   <div class="width">
     <header class="header-section">
       <h2>Why use HelpHQ</h2>
@@ -24,95 +35,57 @@ layout: default
 
     <div class="home-features">
       <div class="home-feature">
-        <div class="icon"></div>
-        <h4>Lorem ipsum dolor</h4>
+        <div class="icon user">{% include svg/user-sat.svg %}</div>
+        <h4>User Satisfaction</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus magna,
-          gravida euismod ex a, sagittis ultricies est.
+          Collect helpfulness feedback from users and easily discover which articles work and which
+          dont.
         </p>
       </div>
 
       <div class="home-feature">
-        <div class="icon"></div>
-        <h4>Lorem ipsum dolor</h4>
+        <div class="icon eye">{% include svg/eye.svg %}</div>
+        <h4>Instant Search</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus magna,
-          gravida euismod ex a, sagittis ultricies est.
+          Users can easily find the answer they are looking for with our powerful instant search
+          technology.
         </p>
       </div>
 
       <div class="home-feature">
-        <div class="icon"></div>
-        <h4>Lorem ipsum dolor</h4>
+        <div class="icon customize">{% include svg/customize.svg %}</div>
+        <h4>Customizable</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus magna,
-          gravida euismod ex a, sagittis ultricies est.
+          HelpHQ is built to be easily customizable and look great when plugged into any theme or
+          design.
         </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="home-testimonial-section">
+<div class="home-seamless wave reverse top">
   <div class="width">
     <header class="header-section on-dark">
-      <h2>Customer Success</h2>
-      <h3>Testimonials</h3>
+      <h2>Seamless Integration</h2>
+      <h3>Built for Shopify</h3>
+
+      <p>
+        HelpHQ was built to plug directly into your Shopify Store. Instantly build a beautiful help
+        and support page that plugs directly into your theme.
+      </p>
+      <p></p>
     </header>
 
-    <div class="home-testimonials">
-      <div class="left">
-        <figure class="home-testimonial">
-          <blockquote>
-            <p>
-              Donec sodales orci vitae consequat tincidunt. Pellentesque sed leo ultrices,
-              dignissim tortor sed, consectetur lectus. Proin quis aliquam lectus. Nulla
-              iaculis in libero sed iaculis. Aliquam semper turpis ac diam vestibulum
-              blandit. Phasellus non pretium augue. Phasellus at porttitor ante, id
-              imperdiet arcu. Pellentesque cursus nulla lacinia neque consectetur semper.
-            </p>
-          </blockquote>
-          <figcaption>
-            <strong>Larry Bird</strong>
-            Founder of Google
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="right">
-        <div class="home-stat-grid">
-          <div class="stat-block">
-            <div>
-              <strong>50%</strong>
-              Less support emails
-            </div>
-          </div>
-
-          <div class="stat-block">
-            <div>
-              <strong>2%</strong>
-              More conversions
-            </div>
-          </div>
-
-          <div class="stat-block">
-            <div>
-              <strong>13%</strong>
-              More satisfied customers
-            </div>
-          </div>
-
-          <div class="stat-block">
-            <div>
-              <strong>32</strong>
-              Answers improved
-            </div>
-          </div>
-        </div>
-      </div>
-
+    <div class="image">
+      <img src="{{ 'assets/dashboard.jpg' | relative_url }}" />
     </div>
   </div>
 </div>
 
-<div class="home-customize-section"></div>
+<div class="home-waiting wave reverse top darkblue">
+  <div class="width">
+    <h2>What are you waiting for?</h2>
+    <a class="button" href="https://app.help-hq.com">Install Now</a>
+  </div>
+</div>

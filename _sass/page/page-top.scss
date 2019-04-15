@@ -1,0 +1,21 @@
+.page-top {
+  padding: 180px 0 180px;
+  background: $mediumBlue;
+  background: linear-gradient(40deg,  #0e298d, #006eff);
+  background-size: 200% 200%;
+  animation: grade 10s ease infinite;
+
+
+  h1 {
+    font-size: 36px;
+    line-height: 1;
+    color: $white;
+    text-align: center;
+    max-width: 660px;
+    margin: 0 auto;
+
+    @media (min-width: $largebp) {
+      font-size: 44px;
+    }
+  }
+}

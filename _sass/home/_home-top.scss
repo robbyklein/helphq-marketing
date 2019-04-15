@@ -1,23 +1,88 @@
-.home-top-section {
-  background: $primary;
-  height: 660px;
-  display: flex;
-  align-items: center;
-  padding-top: 40px;
-  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 
+
+.home-top-section {
+  background: $darkBlue;
+  background: linear-gradient(40deg,  #0e298d, #006eff);
+  background-size: 200% 200%;
+  animation: grade 10s ease infinite;
+  position: relative;
+  overflow: hidden;
+
+  .width {
+    height: 560px;
+    position: relative;
+
+    @media (min-width: $largebp) {
+      height: 700px;
+    }
+
+    @media (min-width: 2000px) {
+      height: 800px;
+    }
+  }
+
+  .content {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-55%);
+    width: 100%;
+
+    @media (min-width: $largebp) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .right {
+    display: none;
+
+    @media (min-width: $largebp) {
+      width: 50%;
+      margin-left: auto;
+      margin-bottom: 0;
+      display: block;
+    }
+
+    .video {
+      width: 100%;
+      padding-bottom: 56.25%;
+      position: relative;
+      background: black;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   h1 {
-    font-size: 60px;
+    font-size: 42px;
     line-height: 1;
     color: $white;
-    font-weight: 800;
+    font-weight: 700;
+
+    @media (min-width: $largebp) {
+      font-size: 54px;
+    }
   }
 
   p {
-    font-size: 20px;
-    max-width: 500px;
-    color: rgba(255,255,255,0.7);
+    font-size: 18px;
+    max-width: 440px;
+    color: rgba(255, 255, 255, 0.7);
     margin: 20px 0;
+
+    @media (min-width: $largebp) {
+      font-size: 20px;
+      max-width: 500px;
+    }
   }
 }

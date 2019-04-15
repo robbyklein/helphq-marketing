@@ -1,14 +1,23 @@
 <header class="header">
   <div class="width">
     <div class="logo">
-      <a href="{{ '/' | relative_url }}">HelpHQ</a>
+      <a href="{{ '/' | relative_url }}">
+        {% include svg/logo.svg %}
+      </a>
     </div>
 
+    <a class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+
     <ul class="nav">
-      <li><a href="#">Demo</a></li>
-      <li><a href="#">Documentation</a></li>
-      <li><a href="#">Support</a></li>
-      <li><a class="get-started" href="#">Get Started</a></li>
+      <li><a href="https://helphq.myshopify.com/pages/helphq">Demo</a></li>
+      <li><a href="{{ 'docs' | relative_url }}">Documentation</a></li>
+      <li><a href="mailto:contacthelphq@gmail.com">Support</a></li>
+      <li><a href="https://app.help-hq.com" class="get-started">Get Started</a></li>
     </ul>
   </div>
 </header>

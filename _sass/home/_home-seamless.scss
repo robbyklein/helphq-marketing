@@ -1,0 +1,28 @@
+.home-seamless {
+  padding: 140px 0 40px;
+  background: $darkBlue;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: $largebp) {
+    padding: 160px 0 60px;
+
+  }
+
+  .header-section {
+    text-align: center;
+  }
+
+  .image {
+    overflow: hidden;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 900px;
+    margin: 40px auto 0;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+}
